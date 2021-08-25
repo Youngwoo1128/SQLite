@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="메모 내용 표시"
+        android:ellipsize="end"
+        app:layout_constraintTop_toTopOf="@+id/textNo"
+        app:layout_constraintBottom_toBottomOf="@id/textNo"
+        app:layout_constraintLeft_toRightOf="@id/textNo"
+        android:layout_marginLeft="32dp"/>
+
+    <TextView
+        android:id="@+id/textDatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020/01/01 13:57"
+        app:layout_constraintTop_toBottomOf="@+id/textContent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="삭제"
+        app:layout_constraintBottom_toBottomOf="@+id/textContent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
